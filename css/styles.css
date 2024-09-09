@@ -1,0 +1,220 @@
+/* Configurações básicas de fonte e layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF; /* Tom de azul muito claro como fundo */
+    color: #333;
+}
+
+/* Estilo para o logotipo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 80px;  /* Tamanho reduzido da logo */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #CFE2F3;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background: linear-gradient(90deg, #E7F3FE, #FAFCFF);
+    color: #444;
+    padding: 10px 5px;  /* Padding reduzido */
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;  /* Fonte menor */
+    font-weight: 400;
+    color: #495057;
+}
+
+/* Seção de introdução - Personalizada */
+.intro-text {
+    background: linear-gradient(135deg, #E7F3FE 0%, #FAFCFF 100%);
+    padding: 30px 15px;  /* Reduzi o padding */
+    margin-bottom: 30px;  /* Menor margem */
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;  /* Bordas mais suaves */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    color: #333;
+}
+
+/* Título da seção de introdução */
+.intro-text h2 {
+    font-size: 2em;  /* Menor tamanho da fonte */
+    color: #005AAB;
+    font-weight: 600;
+    margin-bottom: 15px;  /* Margem inferior reduzida */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;  /* Menor espaçamento entre letras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);  /* Sombra mais suave */
+}
+
+/* Parágrafos da seção de introdução */
+.intro-text p {
+    font-size: 1em;  /* Fonte mais compacta */
+    line-height: 1.4;  /* Reduzi a altura da linha */
+    color: #555;
+    margin-bottom: 15px;  /* Menor espaçamento */
+}
+
+/* Lista de vantagens em duas colunas */
+.intro-text ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 15px;  /* Reduzi o espaçamento */
+    list-style: none;
+    padding: 0;
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 15px;  /* Margem inferior menor */
+}
+
+.intro-text ul li {
+    margin-bottom: 0;
+    position: relative;
+    padding-left: 20px;  /* Menor padding interno */
+    display: flex;
+    align-items: center;
+}
+
+/* Ícones de check mais clean */
+.intro-text ul li::before {
+    content: '✓';  /* Ícone de check mais clean */
+    position: absolute;
+    left: 0;
+    color: #77AADD;  /* Tom mais suave de azul */
+    font-size: 1em;  /* Tamanho ajustado */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Estilo da Tabela de Planos */
+.planos-container {
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #F0F8FF; /* Tom de fundo suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Tabela de Planos */
+.planos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Bordas arredondadas da tabela */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.planos-table th, .planos-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd; /* Cor da borda */
+    font-size: 1.1em;
+}
+
+.planos-table th {
+    background-color: #e7f3fe; /* Fundo suave no cabeçalho */
+    color: #333;
+    font-weight: 600;
+}
+
+.planos-table td {
+    color: #333;
+}
+
+/* Estilizando os ícones de check e x */
+.planos-table td::before {
+    font-size: 1.2em;
+    margin-right: 8px;
+}
+
+/* Check azul claro */
+.planos-table .check::before {
+    content: '✓';
+    color: #77AADD; /* Tom de azul claro */
+}
+
+/* X vermelho */
+.planos-table .x-mark::before {
+    content: '✕';
+    color: #FF6B6B; /* Vermelho vibrante */
+    font-weight: bold;
+}
+
+/* Estilo para os botões de "Mais Informações" */
+.plan-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Alinha com as três colunas */
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.plan-buttons .button {
+    padding: 10px 20px;
+    background-color: #77AADD; /* Azul suave */
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.plan-buttons .button:hover {
+    background-color: #559ACC; /* Efeito hover mais escuro */
+}
+
+/* Rodapé estilizado */
+footer {
+    text-align: center;
+    padding: 10px;  /* Padding reduzido */
+    background-color: #E7F3FE;
+    color: #666;
+    margin-top: 20px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.03);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;  /* Texto menor */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .intro-text {
+        padding: 20px 10px;  /* Padding reduzido em telas menores */
+    }
+
+    .intro-text h2 {
+        font-size: 1.8em;  /* Tamanho ajustado para dispositivos móveis */
+    }
+
+    .intro-text ul {
+        grid-template-columns: 1fr;  /* Alteração para uma coluna */
+        gap: 8px;
+    }
+
+    .plan-buttons {
+        grid-template-columns: 1fr; /* Cada botão em uma linha */
+    }
+
+    .plan-buttons .button {
+        width: 100%; /* Ocupa a largura total */
+    }
+}

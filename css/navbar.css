@@ -1,0 +1,98 @@
+/* Navbar compacta e alinhada */
+.navbar {
+    background-color: #005AAB;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 60px; /* Reduzi a altura da navbar */
+}
+
+/* Container da logo para centralização vertical */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Garante que fique à esquerda */
+}
+
+/* Reduzindo o tamanho da logo e centralizando */
+.navbar .logo {
+    width: 30px; /* Logo menor */
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    margin-top: 40px; /* Adiciona espaço no topo da logo */
+}
+
+/* Estilo da lista de navegação */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Menor espaçamento entre links */
+}
+
+/* Estilo dos links */
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em; /* Tamanho da fonte reduzido */
+    padding: 8px 12px; /* Padding menor nos links */
+    border-radius: 6px; /* Bordas arredondadas menores */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #004085;
+    color: #FFFFFF;
+}
+
+/* Link ativo */
+.navbar ul li a.active {
+    background-color: #003366;
+    font-weight: bold;
+}
+
+/* Ajuste para garantir centralização no lado esquerdo */
+.logo-container {
+    margin-left: 0; /* Garantir que não há margem lateral */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto; /* Altura automática em dispositivos menores */
+    }
+
+    .navbar .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        padding: 10px 15px;
+        width: 100%;
+    }
+}

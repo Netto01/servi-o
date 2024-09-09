@@ -1,0 +1,238 @@
+/* Configurações básicas de fonte e layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF; /* Fundo azul claro */
+    color: #333;
+}
+
+/* Estilo para o logotipo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 60px; /* Tamanho ajustado da logo */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #CFE2F3;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background: linear-gradient(90deg, #E7F3FE, #FAFCFF);
+    color: #444;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+    margin-bottom: 100px; /* Maior espaço para trazer os containers para baixo */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 500;
+    color: #495057;
+}
+
+/* Barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #005AAB;
+    color: white;
+    margin-bottom: 60px; /* Espaçamento entre a navbar e o conteúdo */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #CFE2F3;
+}
+
+/* Seção de introdução - Personalizada */
+.intro-text {
+    background: linear-gradient(135deg, #E7F3FE 0%, #FAFCFF 100%);
+    padding: 90px 50px;
+    margin-bottom: 50px; /* Espaçamento maior entre a introdução e os próximos elementos */
+    text-align: center;
+    max-width: 900px; /* Diminuí a largura da seção */
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    color: #333;
+}
+
+.intro-text h2 {
+    font-size: 2em;
+    color: #005AAB;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Containers lado a lado */
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px; /* Diminuí a largura dos containers */
+    margin: 0 auto;
+    gap: 30px; /* Espaço entre os containers */
+    align-items: stretch;
+    margin-bottom: 150px; /* Mais espaço na parte inferior da página */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px; /* Diminui o padding para containers menores */
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px; /* Altura mínima menor para deixar os containers mais compactos */
+}
+
+.container h2 {
+    font-size: 1.5em;
+    color: #005AAB;
+    margin-bottom: 20px;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container ul li {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Ajuste da seção dos containers */
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 50px auto; /* Aumentei o margin-top para descer a seção dos containers */
+    gap: 30px; /* Espaçamento entre os containers */
+    align-items: stretch;
+    margin-bottom: 60px;
+}
+
+/* Estilo dos containers */
+.container {
+    background-color: #fff;
+    padding: 20px; /* Diminui o padding interno para que o texto suba mais */
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Garante que o conteúdo seja empurrado para cima */
+    min-height: 400px;
+}
+
+/* Estilo do título nos containers */
+.container h2 {
+    font-size: 1.6em;
+    color: #005AAB;
+    margin-bottom: 15px;
+    margin-top: 0; /* Remove margens superiores para alinhar melhor */
+}
+
+/* Lista de itens dentro dos containers */
+.container ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0; /* Remove margem superior da lista */
+}
+
+.container ul li {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px; /* Ajusta o espaçamento entre os itens */
+}
+
+/* Estilo do botão de WhatsApp */
+.whatsapp-contact {
+    text-align: center;
+    margin: 20px 0; /* Reduzido para 20px para aproximar o botão dos containers */
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #20b358;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #E7F3FE;
+    color: #666;
+    margin-top: 80px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.03);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .whatsapp-button {
+        width: 100%;
+        padding: 15px;
+    }
+}

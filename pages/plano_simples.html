@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Simples</title>
+    <link rel="stylesheet" href="css/plano_simples.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+
+    <!-- Local onde a navbar será carregada -->
+    <div id="navbar"></div>
+
+    <section class="intro-text">
+        <h2>Conheça Nosso Plano Simples</h2>
+        <p>Nosso plano simples oferece uma correção rápida e eficiente de testes neuropsicológicos, entregando resultados precisos e confiáveis.</p>
+        <h3>Preço: R$ 200,00</h3>
+    </section>
+
+    <!-- Containers lado a lado -->
+    <div class="container-wrapper">
+        <div class="container">
+            <h2>Incluso no Plano</h2>
+            <ul>
+                <li>Correção de testes</li>
+                <li>Resultados objetivos</li>
+                <li>Entrega rápida</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h2>O que a clínica deve fornecer</h2>
+            <ul>
+                <li>Testes preenchidos corretamente</li>
+                <li>Informações adicionais necessárias</li>
+                <li>Acesso aos laudos</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h2>Entrega dos Resultados</h2>
+            <ul>
+                <li>Via e-mail em PDF</li>
+                <li>Em até 48 horas</li>
+                <li>Com suporte técnico</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Botão para contato via WhatsApp -->
+    <div class="whatsapp-contact">
+        <a href="https://wa.me/5563981184859?text=Quero%20contratar%20o%20plano%20simples" class="whatsapp-button" target="_blank">
+            Contratar o Plano
+        </a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Plano Simples | Desenvolvido por Arlindo Neto CRP 23/3158</p>
+    </footer>
+
+    <!-- Script para carregar a navbar -->
+    <script>
+        // Carregar o conteúdo do arquivo navbar.html
+        fetch('../navbar.html')  // Caminho correto para acessar a navbar fora da pasta pages
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+</body>
+</html>
